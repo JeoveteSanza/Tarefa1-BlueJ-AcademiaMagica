@@ -58,4 +58,15 @@ public class Treinador
     {
         return "Treinar: " + nome + "\nMedalhas: " + medalhas + "\nCompanheira: \n" + companheira.clone();
     }
+    
+    public Treinador clone()
+    {
+        Treinador copia = new Treinador(this.nome);
+        copia.setMedalhas(this.medalhas);
+        if(this.companheira != null)
+        {
+            copia.setCompanheira(this.companheira);
+        }
+        return copia;
+    }
 }

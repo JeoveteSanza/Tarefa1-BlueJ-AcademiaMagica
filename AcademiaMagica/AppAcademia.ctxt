@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=AppAcademia
+comment0.text=\r\n\ AppAcademia\ -\ programa\ de\ teste\ da\ Academia\ de\ Criaturas\ Magicas.\r\n\ Constroi\ e\ testa\ todo\ o\ modelo\ (CriaturaMagica,\ Treinador,\ GuildaMagica,\r\n\ MissaoMagica)\ sem\ pedir\ dados\ ao\ utilizador.\r\n\ \r\n\ @author\ (seu\ nome)\r\n\ @version\ (um\ numero\ da\ versao\ ou\ uma\ data)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

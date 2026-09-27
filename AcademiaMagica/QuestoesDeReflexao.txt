@@ -1,0 +1,18 @@
+Qual é a diferença entre b = a e b = a.clone()? 
+R:  no "b = a" 'b' altera para ter o mesmo valor de 'a', ja em "b = a.clone()" 
+    apenas copia o valor de 'a' permitindo mudar o 'b' livremente.
+    
+Por que motivo return this não produz um clone? 
+R:  "return this" retorna apenas o objeto atual e não clona o objeto.
+
+Por que razão o getter de um atributo composto pode devolver um clone? 
+R:  para não alterar o objeto do atributo composto.
+
+O que faltaria copiar se a guilda criasse apenas uma nova ArrayList? 
+R: faltaria copiar os objetos dentro da arraylist.
+
+Em que situação uma cópia profunda é preferível a uma cópia superficial?
+R:  uma copia profunda cria uma copia independente do original permitindo alterações sem
+    estragar o conteudo original enquanto a superficial serve para partilhar os mesmos
+    objetos entre ambos , ou seja a copia profunda seria preferivel ser usada para o dado
+    dos clientes como por exemplo no carrinho em um site de compras.
