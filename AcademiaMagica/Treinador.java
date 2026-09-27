@@ -7,27 +7,46 @@
  */
 public class Treinador
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
-    private int x;
+    private String nome;
+    private int medalhas;
+    private CriaturaMagica companheira;
 
     /**
      * Construtor para objetos da classe Treinador
      */
-    public Treinador()
+    public Treinador(String nome, int medalhas, CriaturaMagica companheira)
     {
-        // inicializa variáveis de instância
-        x = 0;
+        this.nome = nome;
+        this.medalhas = medalhas;
+        this.companheira = companheira.clone();
     }
-
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y   um exemplo de um parâmetro de método
-     * @return     a soma de x e y 
-     */
-    public int sampleMethod(int y)
+    
+    public Treinador(String nomeTreinador){
+        this.nome = nomeTreinador;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public int getMedalhas(){
+        return medalhas;
+    }
+    
+    public void setMedalhas(int medalhas){
+        this.medalhas = medalhas;
+    }
+    
+    public CriaturaMagica getCompanheira(){
+        return companheira.clone();
+    }
+    
+    public void setCompanheira(CriaturaMagica companheira)
     {
-        // escreva seu código aqui
-        return x + y;
+        this.companheira = companheira.clone();
     }
 }
