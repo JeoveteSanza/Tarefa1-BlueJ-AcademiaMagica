@@ -49,4 +49,13 @@ public class Treinador
     {
         this.companheira = companheira.clone();
     }
+    
+    public void ganharMedalha(int medalha){
+        this.medalhas = medalhas + 1;
+    }
+    
+    public String toString()
+    {
+        return "Treinar: " + nome + "\nMedalhas: " + medalhas + "\nCompanheira: \n" + companheira.clone();
+    }
 }
