@@ -64,7 +64,7 @@ public class CriaturaMagica
     
     public void setNivel(int novoNivel)
     {
-        if(novoNivel < 1 || novoNivel > 100)
+        if(novoNivel < 1 || novoNivel > 10)
         {
             System.out.println("Nivel invalido, por favor insira um nivel entre 1 e 100");
         }
@@ -77,7 +77,7 @@ public class CriaturaMagica
     {
         if(novaEnergia < 1 || novaEnergia > 100)
         {
-            System.out.println("Nivel invalido, por favor insira energia entre 1 e 100");
+            System.out.println("Energia invalido, por favor insira energia entre 1 e 100");
         }
         else{
         this.energia = novaEnergia;
@@ -114,6 +114,16 @@ public class CriaturaMagica
         else{
             this.nivel = nivel +1;
             this.energia = energia - 20;
+        }
+    }
+    
+    public boolean estPronta(){
+        if(energia >= 30 )
+        {
+            return true;
+        }
+        else{
+            return false;
         }
     }
     
